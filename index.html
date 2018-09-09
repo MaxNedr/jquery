@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrapper {
+            width: 500px;
+        }
+
+        .ul {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+            width: 500px;
+        }
+
+        .ulli {
+            border: 1px #eee solid;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            list-style-type: none;
+            padding: 6px;
+            background: #1d773b;
+            color: #fff;
+        }
+
+        .ulli:hover {
+            filter: opacity(80%);
+            /*background: #209444;*/
+            cursor: pointer;
+        }
+
+        .ulLiCheked {
+            border: 1px #eee solid;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            list-style-type: none;
+            padding: 6px;
+            background: #eee;
+            color: #323232
+        }
+        .ulLiCheked:hover {
+            filter: opacity(70%);
+            /*background: #209444;*/
+            cursor: pointer;
+        }
+
+        .textUnderUl {
+            margin-top: -2px;
+            border: 1px #eee solid;
+            position: relative;
+            background: #eee;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <ul class="ul">
+        <li id="1" class="ulLiCheked">Первая вкладка</li>
+        <li id="2" class="ulli">Вторая вкладка</li>
+        <li id="3" class="ulli">Третья вкладка</li>
+        <li id="4" class="ulli">Четвертая вкладка</li>
+    </ul>
+    <div id="textUnderUl" class="textUnderUl">А между тем, пришло время, перейти к самой интересной части обучения – добавлению
+        различных эффектов, именно то, из-за чего его берутся изучать многие люди. И в сегодняшней статье вы узнаете,
+        как изменять CSS-свойства «на лету».
+    </div>
+</div>
+</body>
+</html>
