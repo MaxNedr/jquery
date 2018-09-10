@@ -6,6 +6,15 @@
     <style>
         .wrapper {
             width: 500px;
+            position: relative;
+        }
+        .wrapper_text{
+            height: 180px;
+            border: 1px #eee solid;
+            background: #eee;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
         }
 
         .ul {
@@ -14,6 +23,7 @@
             margin: 0;
             padding: 0;
             width: 500px;
+            position: absolute;
         }
 
         .ulli {
@@ -43,20 +53,28 @@
             background: #eee;
             color: #323232
         }
+
         .ulLiCheked:hover {
             filter: opacity(70%);
             /*background: #209444;*/
             cursor: pointer;
         }
 
+        .height{
+            height: 0;
+        }
+
         .textUnderUl {
+            top: 32px;
+            padding-top: 10px;
             margin-top: -2px;
             border: 1px #eee solid;
-            position: relative;
             background: #eee;
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
             border-radius: 5px;
+            position: absolute;
+            height: 5px;
         }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -70,10 +88,12 @@
         <li id="3" class="ulli">Третья вкладка</li>
         <li id="4" class="ulli">Четвертая вкладка</li>
     </ul>
-    <div id="textUnderUl" class="textUnderUl">А между тем, пришло время, перейти к самой интересной части обучения – добавлению
-        различных эффектов, именно то, из-за чего его берутся изучать многие люди. И в сегодняшней статье вы узнаете,
-        как изменять CSS-свойства «на лету».
-    </div>
+    <div class="wrapper_text"><div id="textUnderUl" class="textUnderUl">
+        А между тем, пришло время, перейти к самой интересной части обучения – добавлению различных эффектов, именно
+        то, из-за чего его берутся изучать многие люди. И в сегодняшней статье вы узнаете, как изменять
+        CSS-свойства «на лету».
+    </div></div>
+
 </div>
 </body>
 </html>

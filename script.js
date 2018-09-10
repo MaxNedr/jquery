@@ -1,6 +1,7 @@
 'use strict';
 
 (function ($) {
+
     $(function () {
         var textOne = 'А между тем, пришло время, перейти к самой интересной части обучения – добавлению различных ' +
             'эффектов, именно то, из-за чего его берутся изучать многие люди. И в сегодняшней статье вы узнаете, ' +
@@ -19,15 +20,34 @@
             var tab = event.target;
             console.log(tab.id);
             $(tab).addClass('ulLiCheked').removeClass('ulli');
-            if (tab.id === 1) {
+            if (tab.id == 1) {
+                $($textUnder).css('height', '0');
+                $($textUnder).animate({
+                    height: "150"
+                }, 500);
                 $textUnder.text(textOne);
-
-            } else if (tab.id === 2) {
+                console.log($textUnder);
+            } else if (tab.id == 2) {
+                $($textUnder).css('height', '0');
+                $($textUnder).animate({
+                    height: "150"
+                }, 500);
                 $textUnder.text(textTwo);
-            } else if (tab.id === 3) {
+                console.log($textUnder);
+            } else if (tab.id == 3) {
+                $($textUnder).css('height', '0');
+                $($textUnder).animate({
+                    height: "150"
+                }, 500);
                 $textUnder.text(textThree);
-            } else if (tab.id === 4) {
+                console.log($textUnder);
+            } else if (tab.id == 4) {
+                $($textUnder).css('height', '0');
+                $($textUnder).animate({
+                    height: "150"
+                }, 500);
                 $textUnder.text(textFour);
+                console.log($textUnder);
             }
             console.log(tab)
         })
